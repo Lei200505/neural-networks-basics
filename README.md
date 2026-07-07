@@ -17,3 +17,7 @@ Többosztályos logisztikus regresszió modell saját implementációval. A mode
 
 MNIST adathalmazon alkalmazott többosztályos softmax regressziós modellt valósít meg. Kezírással történt 10 számjegy felismerését végzi el az implementált softmax regresszió segítségével.
 
+# CIFAR-10 Classification with Neural Networks
+
+A program egy egyszerű neurális hálót (MLP) és egy konvolúciós neurális hálót (CNN) tanít a CIFAR-10 képadathalmazon PyTorch segítségével. Betölti és normalizálja az adatokat, létrehozza a modelleket, betanítja SGD optimalizálóval, majd kiértékeli a teszt adathalmazon a pontosságukat.
+
