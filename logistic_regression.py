@@ -4,6 +4,8 @@ from sklearn.datasets import make_blobs
 
 inputs, labels = make_blobs(n_samples=300, centers=2, n_features=2, random_state=2)
 plt.scatter(inputs[:,0],inputs[:,1],c=labels)
+plt.title("Dataset")
+plt.show()
 
 def sigmoid(x):
   return 1 / (1 + np.exp(-x))
@@ -34,7 +36,8 @@ for i in range(num_epochs):
   logits = np.dot(inputs, weight)
   predicted = sigmoid(logits)
   loss = logisticloss(predicted, labels)
-  print(f"Loss in epoch {i}: {loss}")
+  if i % 5 == 0:
+    print(f"Loss in epoch {i}: {loss}")
   weight = gradient_update(predicted, weight, labels, inputs, lr)
-  
+
 get_accuracy(inputs, weight, labels)
