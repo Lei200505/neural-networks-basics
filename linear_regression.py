@@ -2,22 +2,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 eps = 10
-
 def create_regression_examples(w_true, b_true, num_examples):
   x = np.linspace(0, 20, num_examples)
   noise = np.random.normal(0, 1, num_examples) * eps
   y = w_true * x + b_true + noise
   return x, y
-
 def plot_regression(x, y, w, b):
   fig, ax = plt.subplots()
   ax.scatter(x, y, c = 'blue', label = "Data points")
   ax.plot(x, w * x + b, c = 'red', label = "Approximation")
   plt.show()
-
 def predict(x, w, b):
   return w * x + b
-
 def update_params(x, y, w, b, lr):
   predicted = predict(x, w, b)
   dw = np.sum((predicted - y) * x) / len(x)
