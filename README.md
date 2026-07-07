@@ -13,4 +13,4 @@ Logisztikus regressziós modellt valósít meg saját implementációval. Kétdi
 
 Többosztályos logisztikus regresszió modell saját implementációval. A modell softmax aktivációs függvényt használ, one-hot elkódolással és cross-entropy lossal tanítja be a modellt, gradiens alapú javítólépésekkel.
 
-
+# 
