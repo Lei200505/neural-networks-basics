@@ -13,4 +13,7 @@ Logisztikus regressziós modellt valósít meg saját implementációval. Kétdi
 
 Többosztályos logisztikus regresszió modell saját implementációval. A modell softmax aktivációs függvényt használ, one-hot elkódolással és cross-entropy lossal tanítja be a modellt, gradiens alapú javítólépésekkel.
 
-# 
+# MNIST with Softmax Regression
+
+MNIST adathalmazon alkalmazott többosztályos softmax regressziós modellt valósít meg. Kezírással történt 10 számjegy felismerését végzi el az implementált softmax regresszió segítségével.
+
