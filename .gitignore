@@ -12,7 +12,9 @@ build/
 .DS_Store
 *.csv
 
+
 # Helyi, nagy adathalmazok
+/data/
 /hymenoptera_data/
 cifar10
 MNIST

@@ -11,9 +11,6 @@ import random
 
 
 def findFiles(path): return glob.glob(path)
-
-print(findFiles('data/names/*.txt'))
-
 import unicodedata
 import string
 
@@ -101,7 +98,7 @@ def train(category_tensor, line_tensor):
     loss.backward()
 
     for p in rnn.parameters():
-        p.data.add_(-learning_rate, p.grad.data)
+        p.data.add_(p.grad.data, alpha=-learning_rate)
 
     return output, loss.item()
 

@@ -40,10 +40,18 @@ Adatfeldolgozás (normalizálás, batchek, adataugmentáció).
 
 MLP autoencoder implementáció az MNIST adathalmazon. Encoder és decoder részből áll, 28*28 pixeles képet egy 32 dimenziós látens térbe tömöríti, majd a decoder ebből alkotja újra a képet. ReLu és sigmoid aktiváció, Adam optimizer és BCE lossfüggvény.
 
+# Convolutional Autoencoder MNIST - conv_autencoder.py
+
+Konvolúciós autoenkóder implementáció. Az MLP autoenkóderrel szemben megtartja a kép szerkezetét és kihasználja azt ezzel plusz információt elraktározva a képről. ReLu és sigmoid aktivációs függvény, Adam optimizer, MSE lossfüggvény. 
 
 # Transfer Learning ResNet18 képosztályozás - transfer_learning.py
 
 Egy előre betanított ResNet18 konvolúciós háló segítségével osztályozza méheket és egyéb rovarokat. 
 Az első betanítés során a teljes ResNet18 hálózat finomhangolása történik. Az ImageNet adathalmazon előre betanított modellt használja, majd az utolsó teljesen összekötött réteget lecseréli a két célosztály felismerésére. A hálózat minden paramétere frissül a tanítás során.
 A második betanítás során a konvolúciós rétegek súlyai rögzítve vannak, így csak az újonnan hozzáadott osztályozó réteg tanul. Ez lehetővé teszi a már megtanult vizuális jellemzők új feladatra való felhasználását kisebb adathalmaz esetén is.
+
+# RNN - rnn.py
+
+Rekurrens neuráis háló implementációja, személynevek alapján próbálja meghatározni azok eredetét. Karakterizációt
+hajt végre, karakterminntákat tanul. One-hot-encoding, rekurrens réteg, logsoftmax (valószínűségi kategóriák), negatív-loglikelihood.
 
