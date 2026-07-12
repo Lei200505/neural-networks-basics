@@ -1,6 +1,6 @@
 # Neural-networks-basics
 
-A repóban szereplő példákhoz egyes helyi adathalmazok szükségesek. A hymenoptera_data mappa a Hymenoptera osztályozási példa helyi képadat-készletét tartalmazza, és a Git figyelmen kívül hagyja.
+A repóban szereplő példákhoz egyes helyi adathalmazok szükségesek.
 
 ## Linear Regression from scratch - linear_regression.py
 
